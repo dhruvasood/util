@@ -373,7 +373,7 @@ class MetricBuilder private (
     copy(identity = identity.copy(hierarchicalName = name, dimensionalName = name))
   }
 
-  private[twitter] def withIdentity(identity: Identity): MetricBuilder = copy(identity = identity)
+  def withIdentity(identity: Identity): MetricBuilder = copy(identity = identity)
 
   /**
    * The hierarchical name of the metric
